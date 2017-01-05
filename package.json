@@ -2,8 +2,8 @@
   "scripts": {
     "prebuild": "npm run lint",
     "build": "node build/build.js",
-    "lint": "standard 'demos/**/*.js'",
-    "lint:fix": "standard 'demos/**/*.js' --fix"
+    "lint": "eslint 'demos/**/*.js'",
+    "lint:fix": "eslint 'demos/**/*.js' --fix"
   },
   "dependencies": {
     "firebase": "^3.3.1",
@@ -15,5 +15,11 @@
     "lodash": "^4.15.0",
     "marked": "^0.3.6",
     "standard": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.6.1",
+    "eslint-config-standard": "^6.1.0",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.1"
   }
 }
